@@ -1,0 +1,29 @@
+{
+  "name": "web_portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio website to list my experience so far",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vignesh-23/web_portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "homepage",
+    "website",
+    "html",
+    "css",
+    "js",
+    "resume",
+    "cv"
+  ],
+  "author": "Vignesh Pakkam Saravanan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vignesh-23/web_portfolio/issues"
+  },
+  "homepage": "https://github.com/Vignesh-23/web_portfolio#readme"
+}
