@@ -32,25 +32,30 @@ The website specifically targets tech recruiters, hiring managers, academic coll
 ## Screenshot
 
 ### Desktop View
-![Portfolio Homepage Desktop](https://via.placeholder.com/1200x600/020202/FFFFFF?text=Portfolio+Homepage+-+Desktop+View)
+![Portfolio Homepage](./assets/images/Homepage.png)
 *Homepage featuring animated starfield constellation effect*
 
-### Mobile View
-![Portfolio Mobile Responsive](https://via.placeholder.com/400x800/020202/FFFFFF?text=Portfolio+-+Mobile+View)
-*Fully responsive mobile layout*
+### About Me 
+![About me page](./assets/images/about.png)
+*About me page with consistent css*
+
 
 ### Interactive Timeline
-![Interactive Timeline Feature](https://via.placeholder.com/1200x400/020202/FFFFFF?text=Interactive+Timeline+Visualization)
+![Interactive Timeline Feature](./assets/images/timeline.png)
 *Hover-enabled timeline showing education, work, and projects*
+
+### Contact Me
+![Contact Me Page](./assets/images/contact.png)
+
 
 ## Technologies Used
 
-- **HTML5** - Semantic markup and structure
-- **CSS3** - Styling, animations, and responsive design
-- **JavaScript** - Interactive features and animations
-- **Bootstrap 5.3.0** - Responsive grid system
-- **Font Awesome 6.0.0** - Icon library
-- **Google Fonts** - League Script typography
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Bootstrap 5.3.0**
+- **Font Awesome 6.0.0**
+- **Google Fonts**
 
 ## Project Structure
 
@@ -71,7 +76,7 @@ web_portfolio/
 │   └── script.js           # Interactive features and animations
 │
 ├── assets/
-│   └── (resume.pdf)        # Downloadable resume (to be added)
+│   └── (resume.pdf)        # Downloadable resume 
 │
 └── README.md               # Project documentation
 ```
@@ -79,13 +84,12 @@ web_portfolio/
 ## Features
 
 ### Core Features
-- ✨ Animated starfield background with constellation effects
-- 📱 Fully responsive design for all devices
-- 🎯 Interactive timeline visualization for career journey
-- 📊 Organized skills showcase by category
-- 📬 Professional contact form with validation
-- 📄 Downloadable resume functionality
-- 🔗 Social media integration
+- Animated starfield background with constellation effects
+- Fully responsive design for all devices
+- Interactive timeline visualization for career journey
+- Organized skills showcase by category
+- Professional contact form with validation
+- Downloadable resume functionality
 
 ### Technical Highlights
 - Smooth CSS transitions and animations
@@ -114,96 +118,22 @@ web_portfolio/
 
 2. **Open in your preferred editor**
    ```bash
-   code .  # For VS Code users
+   code .  # For VS Code
    ```
 
 3. **Launch the website**
    
    **Option A: Direct file opening**
    - Navigate to the project folder
-   - Double-click `index.html` to open in browser
+   - Right-click `index.html` to open in browser
    
-   **Option B: Using Live Server (VS Code)**
-   - Install Live Server extension
-   - Right-click on `index.html`
-   - Select "Open with Live Server"
-   
-   **Option C: Using Python HTTP Server**
+   **Option B: Using Reload Server**
    ```bash
-   # Python 3
-   python -m http.server 8000
-   
-   # Python 2
-   python -m SimpleHTTPServer 8000
+   # npm -g install reload
+   reload -p 8080
    ```
-   Then navigate to `http://localhost:8000`
+   Then navigate to `http://localhost:8000` in the browser
 
-### Development Setup
-
-1. **Install development dependencies** (optional)
-   ```bash
-   npm install
-   ```
-
-2. **File structure setup**
-   - Ensure all directories are properly created
-   - Verify paths in HTML files are correct
-   - Check that all asset links are functional
-
-3. **Customization**
-   - Update personal information in HTML files
-   - Replace placeholder image in `about.html`
-   - Add actual resume PDF to `assets/` folder
-   - Modify contact email in `contact.html`
-   - Update social media links
-
-### Deployment
-
-#### GitHub Pages Deployment
-
-1. **Push to GitHub**
-   ```bash
-   git add .
-   git commit -m "Initial portfolio setup"
-   git push origin main
-   ```
-
-2. **Enable GitHub Pages**
-   - Go to repository Settings
-   - Navigate to Pages section
-   - Source: Deploy from branch
-   - Branch: main / root
-   - Save and wait for deployment
-
-3. **Access your site**
-   ```
-   https://[your-username].github.io/web_portfolio/
-   ```
-
-#### Alternative Hosting Options
-
-- **Netlify**: Drag and drop folder to Netlify
-- **Vercel**: Connect GitHub repo for automatic deployment
-- **Firebase Hosting**: Use Firebase CLI for deployment
-
-## Browser Compatibility
-
-| Browser | Version | Support |
-|---------|---------|---------|
-| Chrome | 90+ | ✅ Full |
-| Firefox | 88+ | ✅ Full |
-| Safari | 14+ | ✅ Full |
-| Edge | 90+ | ✅ Full |
-| Opera | 76+ | ✅ Full |
-| IE 11 | - | ❌ Not supported |
-
-## Performance Metrics
-
-- **Page Load Time**: < 2 seconds
-- **First Contentful Paint**: < 1 second
-- **Lighthouse Score**: 90+
-- **Mobile Performance**: Optimized
-- **Accessibility Score**: WCAG AA compliant
 
 ## Contributing
 
@@ -231,7 +161,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions, suggestions, or collaboration:
 
-- **Email**: vigneshpakkam@gmail.com
+- **Email**: pakkamsaravanan.v@northeastern.edu
 - **LinkedIn**: [Vignesh P S](https://www.linkedin.com/in/vignesh-p-s-3b59b91ba/)
 - **GitHub**: [@Vignesh-23](https://github.com/Vignesh-23)
 - **Phone**: +1 (857) 746-9776
