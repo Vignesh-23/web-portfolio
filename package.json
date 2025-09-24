@@ -1,8 +1,9 @@
 {
   "name": "web_portfolio",
   "version": "1.0.0",
+  "type": "module",
   "description": "My portfolio website to list my experience so far",
-  "main": "index.html",
+  "main": "js/script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,5 +26,10 @@
   "bugs": {
     "url": "https://github.com/Vignesh-23/web_portfolio/issues"
   },
-  "homepage": "https://github.com/Vignesh-23/web_portfolio#readme"
+  "homepage": "https://github.com/Vignesh-23/web_portfolio#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.36.0",
+    "globals": "^16.4.0"
+  }
 }

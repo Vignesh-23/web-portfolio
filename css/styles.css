@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,6 @@ body,
 html {
   height: 100%;
   font-family: sans-serif;
-  /* overflow: hidden; */
   background: #020202;
   color: white;
   opacity: 0.99;
@@ -19,7 +17,6 @@ html {
   overflow: hidden;
 }
 
-/* Canvas for star constellation */
 #starfield {
   position: fixed;
   top: 0;
@@ -30,7 +27,6 @@ html {
   background: #020202;
 }
 
-/* Main content */
 .main-content {
   position: relative;
   height: 100vh;
@@ -40,7 +36,6 @@ html {
   z-index: 1;
 }
 
-/* Name title */
 .name-title {
   font-family: "League Script", cursive;
   font-size: 3.5rem;
@@ -51,7 +46,6 @@ html {
   color: #ffffff;
 }
 
-/* Navigation */
 .main-navigation {
   margin-top: 3rem;
 }
@@ -109,7 +103,6 @@ html {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
-/* Footer */
 .footer {
   position: static;
   bottom: 0;
@@ -161,7 +154,6 @@ html {
   transition: all 0.3s ease;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .name-title {
     font-size: 2.5rem;
@@ -200,9 +192,6 @@ html {
   }
 }
 
-/* ===== ABOUT PAGE STYLES ===== */
-
-/* About Page Specific Body */
 .about-page-body {
   overflow-y: auto;
   overflow-x: hidden;
@@ -217,7 +206,6 @@ html {
   min-height: 100vh;
 }
 
-/* Back Navigation */
 .back-nav {
   position: fixed;
   top: 20px;
@@ -244,7 +232,6 @@ html {
   transform: translateX(-5px);
 }
 
-/* Profile Section */
 .profile-section {
   padding: 60px 0;
   min-height: 60vh;
@@ -274,7 +261,6 @@ html {
   margin-bottom: 20px;
 }
 
-/* Skills Section */
 .skills-section {
   padding: 80px 0;
   background: rgba(255, 255, 255, 0.02);
@@ -328,7 +314,6 @@ html {
   color: #fff;
 }
 
-/* Interactive Timeline Section */
 .timeline-section {
   padding: 100px 0 150px;
   position: relative;
@@ -466,7 +451,6 @@ html {
   z-index: 15;
 }
 
-/* Timeline Details Panel */
 .timeline-details-panel {
   position: fixed;
   top: 52%;
@@ -533,7 +517,6 @@ html {
   color: #d0d0d0;
 }
 
-/* Responsive design for about page */
 @media (max-width: 1400px) {
   .interactive-timeline {
     padding-left: 150px;
@@ -678,9 +661,6 @@ html {
   }
 }
 
-/* ===== CONTACT PAGE STYLES ===== */
-
-/* Contact Page Body */
 .contact-page-body {
   overflow-y: auto;
   overflow-x: hidden;
@@ -696,7 +676,6 @@ html {
   min-height: calc(100vh - 100px);
 }
 
-/* Contact Header */
 .contact-header {
   margin-bottom: 60px;
 }
@@ -714,7 +693,6 @@ html {
   color: #b0b0b0;
 }
 
-/* Contact Information Section */
 .contact-info-section {
   padding: 30px;
   background: rgba(255, 255, 255, 0.03);
@@ -788,7 +766,6 @@ html {
   margin: 0;
 }
 
-/* Social Links in Contact */
 .social-section h4 {
   color: #fff;
   font-size: 1.2rem;
@@ -821,7 +798,6 @@ html {
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
 }
 
-/* Resume Download Button */
 .resume-download-btn {
   width: 100%;
   padding: 15px 30px;
@@ -850,7 +826,6 @@ html {
   font-size: 1.2rem;
 }
 
-/* Contact Form Section */
 .contact-form-section {
   padding: 30px;
   background: rgba(255, 255, 255, 0.03);
@@ -896,19 +871,16 @@ html {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* Select dropdown styling */
 .contact-input option {
   background: #1a1a1a;
   color: #fff;
 }
 
-/* Textarea specific */
 textarea.contact-input {
   resize: vertical;
   min-height: 120px;
 }
 
-/* Submit Button */
 .form-submit {
   margin-top: 30px;
 }
@@ -954,7 +926,6 @@ textarea.contact-input {
   transform: translateX(5px);
 }
 
-/* Form Messages */
 .form-message {
   padding: 15px;
   border-radius: 10px;
@@ -975,7 +946,6 @@ textarea.contact-input {
   color: #e74c3c;
 }
 
-/* Responsive Design for Contact Page */
 @media (max-width: 992px) {
   .contact-title {
     font-size: 2.5rem;

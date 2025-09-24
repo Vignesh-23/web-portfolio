@@ -149,6 +149,12 @@ While this is a personal portfolio project, suggestions and feedback are welcome
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Use of AI
+- Claude Opus was used to make the star constellation in the landing page.
+- Prompt: Design a landing page, in index.html
+My name should be in italics and the links to the aboutMe and ContactMe pages should be below it. For the background should be like a star constellation which is moving.
+Only give the index.html, styles.css and script.js for this part alone.
+
 ## Acknowledgments
 
 - Northeastern University for web development curriculum
@@ -158,9 +164,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Inspiration from modern portfolio design trends
 
 ## Contact
-
-For questions, suggestions, or collaboration:
-
 - **Email**: pakkamsaravanan.v@northeastern.edu
 - **LinkedIn**: [Vignesh P S](https://www.linkedin.com/in/vignesh-p-s-3b59b91ba/)
 - **GitHub**: [@Vignesh-23](https://github.com/Vignesh-23)

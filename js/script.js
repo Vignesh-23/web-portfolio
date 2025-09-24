@@ -166,25 +166,6 @@ class MouseEffects {
   }
 }
 
-// Smooth scroll for navigation links (if needed for future pages)
-class SmoothScroll {
-  constructor() {
-    this.init();
-  }
-
-  init() {
-    document.addEventListener("click", (e) => {
-      if (e.target.classList.contains("nav-link")) {
-        // Add click effect
-        e.target.style.transform = "translateY(-2px) scale(0.95)";
-        setTimeout(() => {
-          e.target.style.transform = "translateY(-2px) scale(1)";
-        }, 150);
-      }
-    });
-  }
-}
-
 // Initialize everything when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
   // Only initialize starfield on main page
@@ -192,8 +173,6 @@ document.addEventListener("DOMContentLoaded", () => {
     new StarField();
     new MouseEffects();
   }
-
-  new SmoothScroll();
 
   // Check if we're on the about page
   if (window.location.pathname.includes("about.html")) {
@@ -245,19 +224,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// ===== ABOUT PAGE SPECIFIC FUNCTIONS =====
-
 function initAboutPage() {
-  // Simple fade-in animation for profile section
   animateProfileSection();
 
-  // Animate skills on scroll
   animateSkillsOnScroll();
 
-  // Set up interactive timeline
   setupInteractiveTimeline();
 
-  // Animate timeline on load
   animateTimelineOnLoad();
 }
 
@@ -299,7 +272,6 @@ function animateSkillsOnScroll() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
-        // Fade in skill category
         entry.target.style.opacity = "0";
         entry.target.style.transform = "translateY(20px)";
         entry.target.style.transition =
@@ -330,9 +302,7 @@ function setupInteractiveTimeline() {
   let activeBar = null;
 
   timelineBars.forEach((bar) => {
-    // Mouse enter - show details
     bar.addEventListener("mouseenter", function () {
-      // Remove active class from previous
       if (activeBar) {
         activeBar.classList.remove("active");
       }
@@ -368,14 +338,13 @@ function setupInteractiveTimeline() {
       detailsPanel.classList.add("show");
     });
 
-    // Mouse leave - hide details
+    // hide details
     bar.addEventListener("mouseleave", function () {
       this.classList.remove("active");
       if (activeBar === this) {
         activeBar = null;
       }
 
-      // Hide panel after a short delay
       setTimeout(() => {
         if (!activeBar) {
           detailsPanel.classList.remove("show");
@@ -383,24 +352,19 @@ function setupInteractiveTimeline() {
       }, 300);
     });
 
-    // Click to toggle on mobile
     bar.addEventListener("click", function (e) {
       e.preventDefault();
 
-      // Toggle active state
       if (this.classList.contains("active")) {
         this.classList.remove("active");
         detailsPanel.classList.remove("show");
         activeBar = null;
       } else {
-        // Remove active from others
         timelineBars.forEach((b) => b.classList.remove("active"));
 
-        // Add to this one
         this.classList.add("active");
         activeBar = this;
 
-        // Update and show panel
         const title = this.getAttribute("data-title");
         const subtitle = this.getAttribute("data-subtitle");
         const period = this.getAttribute("data-period");
@@ -426,7 +390,6 @@ function setupInteractiveTimeline() {
     });
   });
 
-  // Close panel when clicking outside
   document.addEventListener("click", function (e) {
     if (
       !e.target.closest(".timeline-bar") &&
@@ -458,7 +421,6 @@ function animateTimelineOnLoad() {
     }, 600);
   }
 
-  // Then animate tracks
   timelineTracks.forEach((track, index) => {
     track.style.opacity = "0";
     track.style.transform = "translateX(-20px)";
@@ -470,7 +432,6 @@ function animateTimelineOnLoad() {
     }, 800 + index * 200);
   });
 
-  // Finally animate bars
   timelineBars.forEach((bar, index) => {
     bar.style.opacity = "0";
     bar.style.transform = "scale(0)";
@@ -482,7 +443,6 @@ function animateTimelineOnLoad() {
     }, 1200 + index * 100);
   });
 
-  // Add scroll-based visibility check
   const observerOptions = {
     threshold: 0.2,
     rootMargin: "0px 0px -50px 0px",
@@ -497,25 +457,24 @@ function animateTimelineOnLoad() {
     });
   }, observerOptions);
 
-  // Observe timeline elements
   const timelineSection = document.querySelector(".interactive-timeline");
   if (timelineSection) {
     observer.observe(timelineSection);
   }
 }
 
-// ===== CONTACT PAGE SPECIFIC FUNCTIONS =====
-
 function initContactPage() {
-  // Animate contact page elements on load
   animateContactElements();
 
-  // Set up form handling
   setupContactForm();
+
+  const resumeBtn = document.querySelector(".resume-download-btn");
+  if (resumeBtn) {
+    resumeBtn.addEventListener("click", downloadResume);
+  }
 }
 
 function animateContactElements() {
-  // Animate header
   const contactHeader = document.querySelector(".contact-header");
   if (contactHeader) {
     contactHeader.style.opacity = "0";
@@ -528,7 +487,6 @@ function animateContactElements() {
     }, 300);
   }
 
-  // Animate info section
   const infoSection = document.querySelector(".contact-info-section");
   if (infoSection) {
     infoSection.style.opacity = "0";
@@ -541,7 +499,6 @@ function animateContactElements() {
     }, 500);
   }
 
-  // Animate form section
   const formSection = document.querySelector(".contact-form-section");
   if (formSection) {
     formSection.style.opacity = "0";
@@ -554,7 +511,6 @@ function animateContactElements() {
     }, 700);
   }
 
-  // Animate contact cards with stagger
   const contactCards = document.querySelectorAll(".contact-card");
   contactCards.forEach((card, index) => {
     card.style.opacity = "0";
@@ -576,14 +532,12 @@ function setupContactForm() {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      // Get form data
       const formData = new FormData(contactForm);
       const data = {};
       formData.forEach((value, key) => {
         data[key] = value;
       });
 
-      // Create mailto link with form data
       const subject = encodeURIComponent(
         data.subject || "Contact Form Submission"
       );
@@ -594,17 +548,14 @@ function setupContactForm() {
           `Message:\n${data.message}`
       );
 
-      // Open mailto link
       window.location.href = `mailto:vigneshpakkam@gmail.com?subject=${subject}&body=${body}`;
 
-      // Show success message
       if (formMessage) {
         formMessage.innerHTML =
           "Thank you for your message! Your email client should open with the pre-filled message.";
         formMessage.className = "form-message success";
         formMessage.style.display = "block";
 
-        // Reset form after a delay
         setTimeout(() => {
           contactForm.reset();
           formMessage.style.display = "none";
@@ -612,7 +563,6 @@ function setupContactForm() {
       }
     });
 
-    // Add input animations
     const inputs = contactForm.querySelectorAll(".contact-input");
     inputs.forEach((input) => {
       input.addEventListener("focus", function () {
@@ -627,20 +577,16 @@ function setupContactForm() {
   }
 }
 
-// Resume download function
 function downloadResume() {
-  // Create a temporary link element
   const link = document.createElement("a");
   link.href = "../assets/files/resume.pdf";
   link.download = "Vignesh_Pakkam_Saravanan_Resume.pdf";
   link.target = "_blank";
 
-  // Trigger the download
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
 
-  // Optional: Show a message or animation
   const btn = document.querySelector(".resume-download-btn");
   if (btn) {
     const originalText = btn.innerHTML;
@@ -653,3 +599,4 @@ function downloadResume() {
     }, 2000);
   }
 }
+window.downloadResume = downloadResume;
