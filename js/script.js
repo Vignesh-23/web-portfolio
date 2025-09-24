@@ -620,7 +620,7 @@ function setupContactForm() {
 function downloadResume() {
     // Create a temporary link element
     const link = document.createElement('a');
-    link.href = '../assets/Vignesh_Pakkam_Saravanan_Resume.pdf'; // Update with actual resume path
+    link.href = '../assets/files/resume.pdf';
     link.download = 'Vignesh_Pakkam_Saravanan_Resume.pdf';
     link.target = '_blank';
     
