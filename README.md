@@ -16,12 +16,16 @@ Email: pakkamsaravanan.v@gmail.com
 This project is part of the Web Development course at Northeastern University.  
 Course: CS 5610 - Web Development  
 Term: Fall 2025  
-Class [Link])(https://johnguerra.co/classes/webDevelopment_online_fall_2025/)
+Class [Link](https://johnguerra.co/classes/webDevelopment_online_fall_2025/)
 
 ## Design Document and links
 [Design Document](<Design Document for CS5610 - Project1.pdf>)
+
+
 [Slides](https://docs.google.com/presentation/d/1_KQj5MdUk7oq7pclntTEuXLqArELV8Ra00MpnGwwbaY/edit?slide=id.p#slide=id.p)
+
 [Video](https://drive.google.com/file/d/1NRNhNvQRgVN6LVG_cg9y9kvQ24PewsPi/view?usp=sharing)
+
 [Live Page](https://vignesh-23.github.io/web-portfolio/)
 
 ## Project Objective
