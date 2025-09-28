@@ -8,14 +8,21 @@ A modern, interactive portfolio website featuring an animated starfield backgrou
 MS Computer Science Student  
 Northeastern University, Boston, MA  
 Email: pakkamsaravanan.v@gmail.com  
-GitHub: [@Vignesh-23](https://github.com/Vignesh-23)  
-LinkedIn: [Vignesh P S](https://www.linkedin.com/in/vignesh-p-s-3b59b91ba/)
+[GitHub](https://github.com/Vignesh-23)  
+[Linked In](https://www.linkedin.com/in/vignesh-p-s-3b59b91ba/)
 
 ## Class Link
 
 This project is part of the Web Development course at Northeastern University.  
 Course: CS 5610 - Web Development  
 Term: Fall 2025  
+Class [Link])(https://johnguerra.co/classes/webDevelopment_online_fall_2025/)
+
+## Design Document and links
+[Design Document](<Design Document for CS5610 - Project1.pdf>)
+[Slides](https://docs.google.com/presentation/d/1_KQj5MdUk7oq7pclntTEuXLqArELV8Ra00MpnGwwbaY/edit?slide=id.p#slide=id.p)
+[Video](https://drive.google.com/file/d/1NRNhNvQRgVN6LVG_cg9y9kvQ24PewsPi/view?usp=sharing)
+[Live Page](https://vignesh-23.github.io/web-portfolio/)
 
 ## Project Objective
 
@@ -76,7 +83,9 @@ web_portfolio/
 │   └── script.js           # Interactive features and animations
 │
 ├── assets/
-│   └── (resume.pdf)        # Downloadable resume 
+│   └── files/ 
+│      └── (resume.pdf)        # Downloadable resume
+│   └── images/
 │
 └── README.md               # Project documentation
 ```
