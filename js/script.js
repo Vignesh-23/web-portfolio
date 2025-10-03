@@ -599,4 +599,3 @@ function downloadResume() {
     }, 2000);
   }
 }
-window.downloadResume = downloadResume;
